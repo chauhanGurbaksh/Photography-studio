@@ -32,7 +32,7 @@ const LoginPage = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:8000/api/user_login', formData);
+      const res = await axios.post('https://photography-studio.onrender.com/api/user_login', formData);
 
       if (res.status === 200) {
         setAlertType('success');

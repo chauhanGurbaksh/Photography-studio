@@ -11,7 +11,7 @@ const Booking = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/read_gallery");
+        const res = await axios.get("https://photography-studio.onrender.com/api/read_gallery");
         setImages(res.data)
       } catch (err) {
         console.error("Error loading gallery:", err);

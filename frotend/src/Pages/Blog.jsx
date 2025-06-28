@@ -7,7 +7,7 @@ const Blog = () => {
 
   // Fetch blog posts from the backend API when the component is mounted
   useEffect(() => {
-    fetch("http://localhost:8000/api/read_blog")
+    fetch("https://photography-studio.onrender.com/api/read_blog")
       .then((res) => res.json())  // Parsing the JSON response
       .then((data) => {
         setBlogs(data);  // Set the fetched data to blogs state

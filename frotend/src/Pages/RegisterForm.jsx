@@ -50,7 +50,7 @@ const RegisterForm = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await axios.post("http://localhost:8000/api/user_register", formData);
+      const response = await axios.post("https://photography-studio.onrender.com/api/user_register", formData);
 
       setAlert({ message: "User registered successfully! Redirecting to login...", type: "success" });
       setFormData({ name: "", email: "", password: "" });

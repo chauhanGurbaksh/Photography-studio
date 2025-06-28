@@ -18,7 +18,7 @@ const BlogAdmin = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/read_blog');
+      const response = await axios.get('https://photography-studio.onrender.com/api/read_blog');
       setBlogItems(response.data);
       setIsLoading(false);
     } catch (error) {

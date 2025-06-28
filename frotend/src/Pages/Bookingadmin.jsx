@@ -18,7 +18,7 @@ const BookingAdmin = () => {
 
   const fetchBookings = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/show_booking');
+      const res = await axios.get('https://photography-studio.onrender.com/api/show_booking');
       setBookings(res.data);
       setIsLoading(false);
     } catch (error) {

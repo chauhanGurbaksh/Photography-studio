@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8000/api/contacts_create", {
+      const response = await fetch("https://photography-studio.onrender.com/api/contacts_create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
