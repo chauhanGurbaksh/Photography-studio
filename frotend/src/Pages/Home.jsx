@@ -26,7 +26,7 @@ const Home=()=>{
     <img className="image2" src="https://i.pinimg.com/736x/4d/ed/be/4dedbe1b247458b9b1c360973b2a9da1.jpg" alt="..." />
     <img style={{marginTop:"90px",height:"600px"}} className="image3" src="https://m.media-amazon.com/images/I/71ZNbdDQZOL._SL1280_.jpg" alt="..." />
     <img style={{marginTop:90,height:"600px"}} className="image4" src="https://www.wed2b.com/media/catalog/product/p/r/prue-sheath-wedding-dress-front-aaliyah-quinn.jpg?optimize=high&fit=bounds&height=476&width=370&canvas=370:476" alt="..." />
-    <img style={{marginLeft:"-50px", height:"600px",marginTop:"-600px" , marginLeft:"10px"}} className="image4" src="https://i.pinimg.com/736x/bc/16/3d/bc163d70251b7f5bc18b097b73d90a17.jpg" alt="..." />
+    <img style={{marginLeft:"-50px", height:"600px",marginTop:"-600px"}} className="image4" src="https://i.pinimg.com/736x/bc/16/3d/bc163d70251b7f5bc18b097b73d90a17.jpg" alt="..." />
 
   </div>
   <div className="next2" style={{ backgroundColor: "#f7f7f7", padding: "50px 20px" }}>
