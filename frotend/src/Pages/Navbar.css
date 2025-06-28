@@ -1,0 +1,1025 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;  /* Dark background for a modern look */
+    color: white;  /* Set default text color to white */
+    margin: 0;
+    padding: 0;
+}
+
+/* Image container (to show the image in the foreground) */
+.image-container {
+    position: absolute; /* Position it on top of the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Place it behind the content */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Navbar styling */
+.navbar {
+    background: linear-gradient(45deg, #1a237e, #1976d2);  /* Dark to light blue gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Slight shadow to give depth */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;  /* White text for contrast */
+    font-size: 24px;  /* Increase font size for impact */
+}
+
+.navbar-nav .nav-link {
+    color: white;  /* Change link color to white */
+    font-size: 16px;
+    padding: 15px 20px;
+    text-transform: uppercase;  /* Modern uppercase text */
+    transition: color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;  /* Bright yellow hover color */
+    text-decoration: underline;
+    transform: scale(1.1);  /* Slightly enlarge the link on hover */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;  /* Make the toggler icon white */
+}
+
+/* Space between navbar items */
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+  
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+/* General reset for body and font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Navbar custom styles */
+.navbar {
+    background-color: #333;  /* Dark background color for navbar */
+    padding: 1rem;  /* Padding around navbar */
+}
+
+/* Style for navbar brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f39c12; /* Gold color for brand */
+}
+
+/* Style for navbar links */
+.navbar a {
+    color: #fff !important;
+    font-weight: bold;
+    transition: color 0.3s ease;  /* Smooth transition for color change */
+}
+
+/* Hover effect on navbar links */
+.navbar a:hover {
+    color: #f39c12 !important;  /* Gold color on hover */
+}
+
+/* Style for navbar items */
+.navbar-nav .nav-item {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+/* Navbar responsiveness */
+.navbar-toggler-icon {
+    background-color: #fff; /* White hamburger icon */
+}
+
+/* Media query for small screens */
+@media (max-width: 991px) {
+    .navbar {
+        background-color: #222;  /* Darker background for smaller screens */
+    }
+}
+
+
+/* Main container for the content */
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 100px;
+    color: white;  /* Ensure text is white */
+}
+/* Styling for the content inside the next div */
+.contant {
+    color: #111;  /* Dark text color for better contrast on white background */
+    font-size: 32px;  /* Larger font size for emphasis */
+    font-weight: bold;
+}
+
+/* Styling for the 'next' div */
+.next {
+    width: 100%;
+    padding: 80px 0;  /* Add padding to the top and bottom */
+    background-color:white;
+      margin-top: 230px;
+    color: #111;  /* Dark text color for readability */
+    text-align: center;
+    margin-top:-x;  /* Adjust the top margin */
+}
+
+.next h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #111;  /* Dark color for text */
+}
+
+.next p {
+    font-size: 20px;
+    text-align: center;
+    color: #111;  /* Dark color for text */
+}
+
+/* Ensure the body content is styled correctly */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.next1 {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: space-evenly; /* Evenly space out images without large gaps */
+    padding: 20px; /* Adds some padding to the container */
+    background-color:white;
+}
+
+.imges, .imges1, .image2, .image3, .image4 {
+    width: 450px; /* Set a fixed width for each image */
+    height: auto; /* Keep the aspect ratio intact */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin: 10px; /* Add a small margin for spacing between the images */
+}
+
+/* You can adjust individual images if necessary */
+.image2 {
+    height: 900px;
+}
+
+.image3 {
+    height: 400px;
+}
+
+.image4 {
+    height: 470px;
+    margin-left: 600px;
+    margin-top: -480px;
+}
+/* Container for the section */
+.next2 {
+  height: 700px;
+  width: 100%;
+  padding: 50px 0;
+}
+
+/* Title Style */
+.ROB {
+  font-size: 50px;
+  margin-top: 90px;
+  color: black;
+  text-align: center; /* Center the title */
+  margin-bottom: 40px; /* Add some space below the title */
+}
+
+/* Container for the cards */
+.cardsm {
+  display: flex;
+  justify-content: space-around; /* Space out the cards evenly */
+  gap: 50px;
+  margin-left: 100px;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  align-items: center; /* Center the items vertically */
+}
+
+/* Styling for each card */
+.card {
+  width: 18rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effect for each card */
+.card:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Styling for card text */
+.card-text {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center; /* Center text inside the card */
+}
+
+/* Card image styling */
+.card-img-top {
+  height: 200px;
+  object-fit: cover; /* Ensures image fills the space without distortion */
+}
+
+/* Responsive design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .cardsm {
+    margin-left: 0; /* Remove margin on small screens */
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center; /* Center the cards horizontally */
+    gap: 30px; /* Decrease gap on smaller screens */
+  }
+
+  .ROB {
+    font-size: 40px; /* Adjust title font size */
+    margin-top: 50px;
+  }
+
+  .card {
+    width: 80%; /* Make the cards smaller on small screens */
+  }
+}
+
+
+.icons{
+    height: 400px;
+    width:100%;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+.icons1{
+    margin-left: 300px;
+    display: flex;
+    gap: 190px;
+    padding-top: 150px;
+    
+}
+.th{
+    color:darkred;
+    font-size: 23px;
+}
+.th1{
+    color:darkred;
+    font-size: 23px;
+}
+.footer {
+    background-color: black;
+  }
+  .container1 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 120px;
+    color: white;  
+    font-size: 30px;
+}
+.c1{
+    font-size: 60px;
+}
+body {
+    background-color:lightblue;
+    overflow-x: hidden;
+    
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  contact styling
+  
+  .container3 {
+    margin-left: 400px;
+    padding-top: 600px;
+    border-radius: 8px;
+    padding: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form textarea {
+    border-radius: 8px;
+  }
+  
+  button[type="submit"] {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .frm{
+    color:black;
+    font-size: 40px;
+    margin-top:-560px;
+    margin-left: -150px;
+  }
+   .from{
+    margin-left: 450px;
+    margin-top: 250px;
+   }
+  .adrs{
+    font-size: 30px;
+    color: black;
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+  .pa{
+    color: black;
+    margin-left: 100px;
+    font-size: 20px;
+  }
+  .adrs1{
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  .pa1{
+    color:black;
+    margin-left: 100px;
+    font-size: 20px;
+  }
+  .map{
+    height: 400px;
+    width: 100%;
+
+  }
+  /* .imes{
+    height: 1800px;
+    width: 100%;
+    background-color:white
+  }
+  .imes1{
+    height: 390px;
+    width: 100%;
+  }
+.images{
+   height: 300px;
+   width:300px;
+   margin-left: 70px;
+   margin-top: 50px;
+
+} */
+/* gallery */
+/* Gallery Container */
+.glry {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #ffcc00;
+  overflow: hidden; /* Hide any overflow of the bubble effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Styling */
+.galry {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the area properly */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Text Styling */
+.sd {
+  position: absolute;
+  
+  font-size: 70px;
+  color: #f0f0f0;
+  z-index: 10; /* Ensure text stays on top of the image */
+  text-align: center;
+}
+
+/* Hover Effect */
+.glry:hover .galry {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Add shadow to simulate a bubble around the image */
+}
+
+/* Bubble effect when hovering */
+.glry:hover {
+  animation: bubbleAnimation 0.8s ease-out forwards; /* Animate the bubble appearance */
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); /* Create a bubble effect */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Final bubble effect */
+  }
+}
+
+.imgG{
+  margin-top: 20px;
+}
+  /* Container for the whole section */
+
+  /* Container for the whole section */
+  .imes {
+    height: 1800px;
+    width: 100%;
+    background-color: white;
+  }
+
+  /* Container for the images */
+  .imes1 {
+    height: 390px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the images horizontally */
+  }
+
+  /* Styling for each image */
+  .images {
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+    animation: zoomIn 5s infinite alternate; /* Animation for automatic zoom */
+  }
+
+  /* Keyframes for zoom effect */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1); /* Normal size */
+    }
+    50% {
+      transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+      transform: scale(1); /* Back to normal size */
+    }
+  }
+
+
+.beach{
+    padding: 40px;
+    width:100%;
+}
+.beach1{
+    padding: 40px;
+    height: 600px;
+    width: 100%;
+}
+.black{
+  width: 1290px;
+  padding: 50px;
+  height: 600px;
+  margin-left: 20px;
+}
+
+.nxt{
+    height: 1500px;
+    width: 100%;
+    background-color: #f39c12;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Set a max width for the slider */
+    margin: auto;
+    overflow: hidden;
+    margin-top: 150px;
+  }
+  
+  .slider {
+    display: flex;
+    width: 1000%; /* 10 images, so width is 1000% */
+    animation: slide 60s linear infinite; /* Longer slide duration (60 seconds for smoothness) */
+gap: 50px;
+}
+  
+  .slide {
+    
+    width: 10%; /* Each image takes up 10% of the container's width (100% / 10 images) */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);  /* First image */
+    }
+    10% {
+      transform: translateX(-10%);  /* Second image */
+    }
+    20% {
+      transform: translateX(-20%);  /* Third image */
+    }
+    30% {
+      transform: translateX(-30%);  /* Fourth image */
+    }
+    40% {
+      transform: translateX(-40%);  /* Fifth image */
+    }
+    50% {
+      transform: translateX(-50%);  /* Sixth image */
+    }
+    60% {
+      transform: translateX(-60%);  /* Seventh image */
+    }
+    70% {
+      transform: translateX(-70%);  /* Eighth image */
+    }
+    80% {
+      transform: translateX(-80%);  /* Ninth image */
+    }
+    90% {
+      transform: translateX(-90%);  /* Tenth image */
+    }
+    100% {
+      transform: translateX(0);  /* Back to the first image */
+    }
+  }
+  
+  .slide{
+    height: 400px;
+    width: 400px;
+  }
+  
+  .bw{
+    color: #f0f0f0;
+    font-size: 90px;
+    margin-top: -300px;
+    margin-left: 60px;
+  }
+  /* blog */
+  /* Global Styles */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: black; /* Change all text color to black */
+}
+
+a {
+  text-decoration: none;
+  color: black; /* Change all link text color to black */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white; /* Keep the hero section text white for contrast */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#gallery .gallery-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2em;
+}
+
+form input, form textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+/* navbar */
+.custom-nav .nav-link {
+  font-family: 'Arial', sans-serif; /* Font family */
+  font-size: 0.9rem; /* Smaller font size */
+  color: #333; /* Text color */
+  padding: 8px 12px; /* Adjust padding for smaller items */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change color on hover */
+.custom-nav .nav-link:hover {
+  color: #007bff; /* Hover color */
+}
+
+/* Adjust size and space for social icons */
+.navbar-brand i {
+  font-size: 1.2rem; /* Smaller icon size */
+  color: #333; /* Icon color */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change icon color on hover */
+.navbar-brand i:hover {
+  color: #007bff; /* Hover color for icons */
+}
+/* gallery */
+
+/* Container for images */
+.imgG {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Image styling for beach class */
+.beach, .beach1 {
+    padding: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image styling for beach1 (taller image) */
+.beach1 {
+    height: 600px;
+    width: 100%;
+    object-fit: cover; /* Ensures image fits without distortion */
+}
+
+/* Image styling for beach (regular images) */
+.beach {
+    width: 100%;
+    object-fit: cover; /* Ensures image fits without distortion */
+}
+
+/* Zoom effect on hover */
+.beach:hover, .beach1:hover {
+    transform: scale(1.2); /* Zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+/* button */
+.btn-book-now {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 30px;
+  text-align: center;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-book-now::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.btn-book-now:hover {
+  color: skyblue;
+  background-color: #fff;
+}
+
+.btn-book-now:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-book-now:focus {
+  outline: none;
+}
+/* Nature */
+/* Base style for the photo container */
+/* Base style for the photo container */
+.photo {
+  height: 1100px;
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Flip effect */
+.photo img {
+  opacity: 0; /* Initially hidden */
+  transform: rotateY(180deg); /* Start from flipped state */
+  animation: flipIn 1s ease-out forwards; /* Apply animation */
+  margin: 15px; /* Add spacing between images */
+}
+
+/* Keyframes for flip effect */
+@keyframes flipIn {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg); /* Start from flipped */
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0); /* End at normal position */
+  }
+}
+
+/* Stagger the animation of images with a delay for each */
+.photo img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.photo img:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.photo img:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.photo img:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.photo img:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.photo img:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.photo img:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.photo img:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+.photo img:nth-child(9) {
+  animation-delay: 1.6s;
+}
+
+.photo img:nth-child(10) {
+  animation-delay: 1.8s;
+}
+
+/* Image size */
+.img-fluid {
+  height: 300px;
+  width: 300px;
+}
+/* Style the .pic container */
+.pic {
+  height: 500px; /* Adjust height to your needs */
+  width: 100%;
+  margin-top: 100px; /* Adjust top margin */
+  overflow: hidden; /* Hide images that are out of bounds */
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Style the .pics container for the slider effect */
+.pics {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  animation: slide 20s infinite linear;
+}
+
+/* Style each image inside the .pics container */
+.pics img {
+  width: 100%; /* Make images responsive */
+  height: auto;
+  border-radius: 8px;
+  
+}
+
+/* Define the sliding animation */
+@keyframes slide {
+  0% {
+      transform: translateX(0); /* Starting position */
+  }
+  25% {
+      transform: translateX(-100%); /* Move left by 100% of the container width */
+  }
+  50% {
+      transform: translateX(-200%); /* Move further left */
+  }
+  75% {
+      transform: translateX(-300%); /* Move further left */
+  }
+  100% {
+      transform: translateX(-400%); /* Move left to show the last image */
+  }
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .pic {
+      height: 300px; /* Adjust height on smaller screens */
+  }
+
+  .pics {
+      gap: 20px; /* Reduce the gap between images on smaller screens */
+  }
+}
+/* family movement */
+.family-movement {
+  font-size: 70px; /* Larger font size */
+  font-family: 'Times New Roman', serif; /* Serif font */
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(0, 0, 0, 0.5); /* 3D shadow */
+  letter-spacing: 6px;
+  margin-top: 20px;
+}
+/* buttons in alumb */
+.neon-button {
+  display: inline-block;
+  color: #00ff99;
+  padding: 16px 40px;
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #00ff99;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.8);
+  background: transparent;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 153, 1);
+  transform: scale(1.05);
+}
+
+.neon-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.6);
+}
+
+
+.video {
+  border: 2px solid #000;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
