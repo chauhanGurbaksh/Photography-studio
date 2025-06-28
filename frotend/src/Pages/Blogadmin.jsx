@@ -48,9 +48,9 @@ const BlogAdmin = () => {
 
     try {
       if (form._id) {
-        await axios.put(`http://localhost:8000/api/update_blog/${form._id}`, blogData);
+        await axios.put(`https://photography-studio.onrender.com/api/update_blog/${form._id}`, blogData);
       } else {
-        await axios.post('http://localhost:8000/api/create_blog', blogData);
+        await axios.post('https://photography-studio.onrender.com/api/create_blog', blogData);
       }
 
       setForm({ title: '', desc: '', img: '' });
@@ -68,7 +68,7 @@ const BlogAdmin = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this blog post?')) {
       try {
-        await axios.delete(`http://localhost:8000/api/delete_blog/${id}`);
+        await axios.delete(`https://photography-studio.onrender.com/api/delete_blog/${id}`);
         fetchBlogs();
       } catch (error) {
         console.error('Error deleting blog post:', error);

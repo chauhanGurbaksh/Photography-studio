@@ -9,7 +9,7 @@ const Wedding = () => {
 
   // Fetch gallery data and filter by category "Wedding"
   useEffect(() => {
-    fetch("http://localhost:8000/api/read_gallery")
+    fetch("https://photography-studio.onrender.com/api/read_gallery")
       .then((res) => res.json())
       .then((data) => {
         const filtered = data.filter((item) => item.category === "Wedding");

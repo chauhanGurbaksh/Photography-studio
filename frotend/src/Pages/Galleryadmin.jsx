@@ -16,7 +16,7 @@ const GalleryAdmin = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/read_gallery');
+        const response = await axios.get('https://photography-studio.onrender.com/api/read_gallery');
         setGalleryItems(response.data);
 
         const categories = [...new Set(response.data.map(item => item.category))];
@@ -44,13 +44,13 @@ const GalleryAdmin = () => {
       const galleryData = { title, description, image, category };
 
       if (form._id) {
-        await axios.put(`http://localhost:8000/api/update_gallery/${form._id}`, galleryData);
+        await axios.put(`https://photography-studio.onrender.com/api/update_gallery/${form._id}`, galleryData);
       } else {
-        await axios.post('http://localhost:8000/api/create_gallery', galleryData);
+        await axios.post('https://photography-studio.onrender.com/api/create_gallery', galleryData);
       }
 
       setForm({ title: '', description: '', image: '', category: '' });
-      const res = await axios.get('http://localhost:8000/api/read_gallery');
+      const res = await axios.get('https://photography-studio.onrender.com/api/read_gallery');
       setGalleryItems(res.data);
 
       const categories = [...new Set(res.data.map(item => item.category))];
@@ -218,7 +218,7 @@ const GalleryAdmin = () => {
                           onClick={async () => {
                             if (window.confirm('Are you sure you want to delete this item?')) {
                               try {
-                                await axios.delete(`http://localhost:8000/api/delete_gallery/${item._id}`);
+                                await axios.delete(`https://photography-studio.onrender.com/api/delete_gallery/${item._id}`);
                                 setGalleryItems(galleryItems.filter((g) => g._id !== item._id));
 
                                 const categories = [...new Set(

@@ -11,7 +11,7 @@ const ContactAdmin = () => {
 
   const fetchContacts = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/contacts_read');
+      const response = await fetch('https://photography-studio.onrender.com/api/contacts_read');
       const data = await response.json();
       setContacts(data);
     } catch (error) {
@@ -22,7 +22,7 @@ const ContactAdmin = () => {
   const handleDelete = async (_id) => {
     if (!window.confirm("Are you sure you want to delete this contact?")) return;
     try {
-      const response = await fetch(`http://localhost:8000/api/contacts_delete/${_id}`, {
+      const response = await fetch(`https://photography-studio.onrender.com/api/contacts_delete/${_id}`, {
         method: 'DELETE',
       });
 

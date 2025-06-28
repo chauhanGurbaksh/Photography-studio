@@ -69,7 +69,7 @@ const Booking = () => {
 
     try {
       // Send data to the backend API
-      const response = await axios.post("http://localhost:8000/api/create_booking", {
+      const response = await axios.post("https://photography-studio.onrender.com/api/create_booking", {
         name,
         email,
         bookingDate,

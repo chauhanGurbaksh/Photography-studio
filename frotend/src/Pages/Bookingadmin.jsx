@@ -39,7 +39,7 @@ const BookingAdmin = () => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:8000/api/update_booking/${editBooking._id}`, editBooking);
+      await axios.put(`https://photography-studio.onrender.com/api/update_booking/${editBooking._id}`, editBooking);
       setSuccessMessage('Booking updated successfully!');
       setShowModal(false);
       fetchBookings();
@@ -53,7 +53,7 @@ const BookingAdmin = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this booking?')) {
       try {
-        await axios.delete(`http://localhost:8000/api/delete_booking/${id}`);
+        await axios.delete(`https://photography-studio.onrender.com/api/delete_booking/${id}`);
         setSuccessMessage('Booking deleted!');
         fetchBookings();
         setTimeout(() => setSuccessMessage(''), 3000);

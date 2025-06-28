@@ -7,7 +7,7 @@ const Galleries = () => {
 
   useEffect(() => {
     // Fetch gallery items from the API
-    fetch("http://localhost:8000/api/read_gallery")
+    fetch("https://photography-studio.onrender.com/api/read_gallery")
       .then((response) => response.json())
       .then((data) => {
         setGalleries(data);  // Set the fetched gallery data

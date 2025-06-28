@@ -6,7 +6,7 @@ const Event = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/read_gallery")
+    fetch("https://photography-studio.onrender.com/api/read_gallery")
       .then((res) => res.json())
       .then((data) => {
         setGalleryItems(data);
